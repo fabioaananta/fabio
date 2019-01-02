@@ -1,0 +1,201 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-image: radial-gradient(circle ,white,grey,black);
+	font-family: 'Helvetica', arial, sans-serif;
+	height: 500px;
+	font-size: 15px;
+}
+form {
+    width:500px;
+    margin:40px auto;
+}
+.search {
+    padding:8px 15px;
+    background:rgba(50, 50, 50, 0.2);
+    border:2px solid #dbdbdb;
+}
+.button {
+    position:relative;
+    padding:6px 15px;
+    left:-1px;
+    border:2px solid #53bd84;
+    background-color:#53bd84;
+    color:#fafafa;
+}
+.button:hover  {
+    background-color:#fafafa;
+    color:#207cca;
+}
+.container > div:nth-child(1n){
+	background-color: black;
+}
+
+p{
+	margin-bottom: 30px;
+	line-height: 1.5em;
+}
+h3{
+	border: 4px solid blue;
+	margin-bottom: 20px;
+	border-bottom: 4px solid blue;
+	text-align: center;
+	color: orange;
+}
+
+a{
+	text-decoration: none;
+	color: blue;
+}
+a:hover{
+	color: red;
+}
+
+.container{
+	max-width: 1080px;
+	margin: 20px auto;
+	background: gray;
+	overflow: hidden;
+	padding: 10px;
+	grid-template-columns: repeat(20, 1fr);
+	grid-template-rows: 40px 200px 60px;
+	color: white;
+	
+}
+
+
+.header{
+	border: 1px solid #dedede;
+	padding: 10px;
+	margin: 10px;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	font-size: 2em;
+	color: red;
+	
+}
+
+
+/* Main */
+	.left{
+		width: 250px;
+		border: 4px solid black;
+		background: #e5e5e5;
+		padding: 10px;
+		margin: 10px;
+		float: left;
+		color: green;
+	}
+
+	.middle{
+		width: 500px;
+		border: 4px solid black;
+		padding: 10px;
+		margin: 10px;
+		float: left;
+	}
+		.middle img{
+			max-width: 100%;
+			height: auto;
+		}
+
+		.middle a{
+			font-weight: bold;
+		}
+
+	.right{
+		width: 250px;
+		border: 4px solid Black;
+		background: #e5e5e5;
+		padding: 10px;
+		margin: 10px;
+		float: left;
+		color: green;
+	}
+	hh{
+		color: red;
+	}
+
+
+	.right ul{
+		list-style-type: none;
+	}
+	.right ul li{
+		display: block;
+	}
+	.right ul li a{
+		display: block;
+		border-bottom: 2px solid yellowgreen;
+		margin-bottom: 10px;
+		padding: 10px 5px;
+	}
+	.right ul li a:hover{
+		color: orange;
+	}
+
+.footer{
+	clear: both;
+	border: 1px solid red;
+	padding: 10px;
+	margin: 10px;
+}
+
+
+/************************************************************************************
+MEDIA QUERIES
+*************************************************************************************/
+/* untuk ukuran 1080px kebawah */
+@media screen and (max-width: 1080px) {
+	
+	.container {
+		width: 100%;
+	}
+	.left {
+		width: 25%;
+		background: #fff000;
+	}
+	.middle {
+		width: 69%;
+		float: right;
+	}
+	
+	.right {
+		clear: both;
+		padding: 1% 4%;
+		width: auto;
+		float: none;
+		background: #fff000;
+	}
+}
+
+
+/* untuk ukuran layar 700px kebawah */
+@media screen and (max-width: 780px) {
+	
+	.header, 
+	.footer{
+		text-align: center;
+	}
+	.left {
+		width: auto;
+		float: none;
+	}
+	
+	.middle {
+		width: auto;
+		float: none;
+	}
+	
+	.right {
+		width: auto;
+		float: none;
+	}
+
+}
+
+
